@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nathan Cooper</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        #aboutme {
+            background-color: rgb(28, 28, 29);
+            text-decoration-color: beige
+        }
+        
+        header {
+            background-color: rgb(255, 60, 0)
+        }
+        
+        footer {
+            background-color: #f5eef7;
+            padding: 25px;
+        }
+        
+        .imgresponsive {
+            float: left;
+            width: 33.33%;
+            height: 33.33%;
+            padding: 5px;
+        }
+        /* The side navigation menu */
+        
+        .sidenav {
+            height: 100%;
+            /* 100% Full-height */
+            width: 0;
+            /* 0 width - change this with JavaScript */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            left: 0;
+            background-color: #111;
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 60px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidenav */
+        }
+        /* The navigation menu links */
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        /* When you mouse over the navigation links, change their color */
+        
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        /* Position and style the close button (top right corner) */
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        
+        #mynavbar {
+            color: #f1f1f1;
+            size: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="chapter 4/chapter4.html">Chapter4</a>
+                <a href="Chapter 5/chapter5.html">Chapter5</a>
+                <a href="Chapter 6/Chapter6.html">Chapter6</a>
+                <a href="Chapter 7/Chapter7.html">Chapter7</a>
+                <a href="Chapter 8/Chapter8.html">Chapter8</a>
+                <a href="Chapter 9/Chapter9.html">Chapter9</a>
+                <a href="Chapter 10/Chapter10.html">Chapter10</a>
+                <a href="Chapter 11/Chapter 11.html">Chapter11</a>
+                <a href="Chapter 12/Chapter 12.html">Chapter12</a>
+                <a href="Chapter 13/Chapter 13.html">Chapter13</a>
+                <a href="Chapter 14/Cahpter 14.html">Chapter14</a>
+                <a href="Chapter 15/Chapter 15.html">Chapter15</a>
+                <a href="Chapter 16/Chapter 16.html">Chapter16</a>
+                <a href="Chapter 17/Chapter 17.html">Chapter17</a>
+                <a href="Shopping cart/shopStart.html">Shopping cart</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <span id="mynavbar" onclick="openNav()">menu</span>
+
+            <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+            <div id="main">
+                ...
+            </div>
+        </div>
+    </nav>
+
+    <div id="aboutme" class="jumbotron">
+        <div class="container text-center">
+            <h1>Nathan Cooper</h1>
+            <p class="text-info">Good morning, day or night, or what ever time it is. My Name is Nathan Cooper. Some of my favourite things to do are to: Play on my computer, play with my dogs, </p>
+            <p class="text-info">SLEEP!, eat my favourite food which is Chicken Korma at a restaurant called Clasic India in Johannesburg</p>
+            <p class="text-info">when I made this Portfolio I was 12 years old.</p>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h3>Some of my Work</h3><br>
+        <div class="row">
+
+            <div class="col-sm-3">
+                <p>This is chess, it is my most fun sport that I do</p>
+                <img src="images.jpeg" class="imgresponsive" style="width:100%" alt="Image">
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>This is me and my best friend!</p>
+                    <img src="ME and Liam.jpg" class="imgresponsive" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-3">
+                    <p>This is me and my baby cousin</p>
+                    <img src="Me and Blake.jpg" class="imgresponsive" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-3">
+                    <p>This is me at a small village called Dullstroom</p>
+                    <img src="Me.jpg" class="imgresponsive" style="width:100%" alt="Image">
+                </div>
+
+            </div>
+            <br><br><br>
+
+
+
+
+
+            <footer class="container-fluid text-center">
+                <p>Thank you for visiting my Portfolio. Enjoy the rest of you day!</p>
+            </footer>
+
+</body>
+
+</html>
